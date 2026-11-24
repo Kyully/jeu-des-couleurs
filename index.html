@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jeu des couleurs</title>
+</head>
+<body>
+
+    <video id="video-fond" autoplay muted loop playsinline preload="auto">
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+
+    <main id="zone-jeu">
+
+        <h1>Le jeu des couleurs!</h1>
+
+        <section id="infos">
+
+            <p id="vies">
+                Vies :
+                <span class="coeur">❤️</span>
+                <span class="coeur">❤️</span>
+                <span class="coeur">❤️</span>
+            </p>
+
+            <p>
+                Score :
+                <span id="score">0</span>
+            </p>
+
+            <p>
+                Meilleur score 🌟 :
+                <span id="meilleur-score">0</span>
+            </p>
+
+        </section>
+
+        <p id="message">
+            Choisis une difficulté puis clique sur le bouton !
+        </p>
+
+        <button id="bouton-jeu">
+            Clique !
+        </button>
+
+        <button id="bouton-restart" disabled>
+            Recommencer
+        </button>
+
+        <section class="difficulte">
+
+            <p>Choisis une difficulté :</p>
+
+            <button class="choix actif" data-difficulte="facile">Facile</button>
+            <button class="choix" data-difficulte="moyen">Moyen</button>
+            <button class="choix" data-difficulte="difficile">Difficile</button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
